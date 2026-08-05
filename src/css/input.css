@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+--font-tajawal: "Tajawal";
+--font-cairo: "Cairo"; 
+}
+
+@layer components {
+.footer-heading-3 {
+@apply font-tajawal font-bold text-sm leading-5 text-right text-white;
+}
+
+.footer-text {
+    @apply font-tajawal font-normal text-base leading-6 text-right text-white;
+}
+
+.footer-heading-2 {
+    @apply font-cairo font-bold text-2xl leading-8 text-right text-white;
+}
+
+}
