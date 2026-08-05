@@ -200,6 +200,15 @@
   .grid {
     display: grid;
   }
+  .table {
+    display: table;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -221,6 +230,10 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-\[\#1B5E20\] {
     background-color: #1B5E20;
   }
@@ -239,11 +252,48 @@
   .pr-20 {
     padding-right: calc(var(--spacing) * 20);
   }
+  .pb-1 {
+    padding-bottom: var(--spacing);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-11 {
+    padding-bottom: calc(var(--spacing) * 11);
+  }
+  .pb-14 {
+    padding-bottom: calc(var(--spacing) * 14);
+  }
+  .pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
+  }
+  .pb-17 {
+    padding-bottom: calc(var(--spacing) * 17);
+  }
+  .pb-116 {
+    padding-bottom: calc(var(--spacing) * 116);
+  }
+  .pb-\[58\] {
+    padding-bottom: 58;
+  }
   .pl-20 {
     padding-left: calc(var(--spacing) * 20);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   @media (width >= 48rem) {
     .md\:grid-cols-2 {
@@ -284,6 +334,7 @@
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
     color: var(--color-white);
+    opacity: 80%;
   }
   .footer-heading-2 {
     text-align: right;
@@ -297,6 +348,16 @@
     color: var(--color-white);
   }
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -308,6 +369,8 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
     }

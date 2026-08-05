@@ -11,7 +11,7 @@
 }
 
 .footer-text {
-    @apply font-tajawal font-normal text-base leading-6 text-right text-white;
+    @apply font-tajawal font-normal text-base leading-6 text-right text-white opacity-80;
 }
 
 .footer-heading-2 {
