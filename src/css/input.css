@@ -1,21 +1,39 @@
 @import "tailwindcss";
 
 @theme {
---font-tajawal: "Tajawal";
---font-cairo: "Cairo"; 
+    --font-tajawal: "Tajawal";
+    --font-cairo: "Cairo";
 }
 
 @layer components {
-.footer-heading-3 {
-@apply font-tajawal font-bold text-sm leading-5 text-right text-white;
-}
+    .footer-heading-3 {
+        @apply font-tajawal font-bold text-sm leading-5 text-right text-white;
+    }
 
-.footer-text {
-    @apply font-tajawal font-normal text-base leading-6 text-right text-white opacity-80;
-}
+    .footer-text {
+        @apply font-tajawal font-normal text-base leading-6 text-right text-white opacity-80;
+    }
 
-.footer-heading-2 {
-    @apply font-cairo font-bold text-2xl leading-8 text-right text-white;
-}
+    .footer-heading-2 {
+        @apply font-cairo font-bold text-2xl leading-8 text-right text-white;
+    }
+
+    .input-footer {
+        @apply flex-1 rounded-xl border border-[#FFFFFF33] bg-[#FFFFFF1A] min-w-35 px-4 pt-2.75 pb-2.5;
+    }
+
+    .input-footer::placeholder {
+        @apply font-tajawal font-normal leading-none text-right text-[#FFFFFF80];
+    }
+
+    .button-footer {
+        @apply bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold;
+
+        @apply w-22.5 px-3 py-2.25 text-sm leading-5 ;
+
+        @screen md {
+            @apply w-[102.3px] px-6 py-2.25 text-base leading-6;
+        }
+    }
 
 }
