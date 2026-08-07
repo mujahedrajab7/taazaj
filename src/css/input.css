@@ -10,53 +10,93 @@
         @apply container mx-auto flex justify-between px-3 md:px-4 lg:px-6;
     }
 
+    .section-1-footer {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-3 md:px-4 lg:px-6 transition duration-500;
+    }
+
+
+    .section-2-footer {
+        @apply font-tajawal font-medium text-[12px] leading-4 text-white flex flex-col gap-4 md:flex-row md:gap-0 justify-between pt-8 border-t border-[#FFFFFF1A] transition duration-500;
+    }
+
+
+    .footer-heading-2 {
+        @apply font-cairo font-bold text-2xl leading-8 text-right text-white transition duration-300;
+    }
+
+    .footer-heading-2:hover {
+        @apply text-[#A5D6A7] scale-105;
+    }
+
     .footer-heading-3 {
-        @apply font-tajawal font-bold text-sm leading-5 text-right text-white;
+        @apply font-tajawal font-bold text-sm leading-5 text-right text-white transition duration-300;
+    }
+
+    .footer-heading-3:hover {
+        @apply text-[#A5D6A7] scale-105;
     }
 
     .footer-text {
         @apply font-tajawal font-normal text-base leading-6 text-right text-white opacity-80;
     }
 
-    .footer-heading-2 {
-        @apply font-cairo font-bold text-2xl leading-8 text-right text-white;
+    .footer-text a {
+        @apply transition duration-300;
     }
 
+    .footer-text a:hover {
+        @apply text-white underline underline-offset-4 scale-105;
+    }
+
+
     .input-footer {
-        @apply flex-1 rounded-xl border border-[#FFFFFF33] bg-[#FFFFFF1A] min-w-35 px-4 pt-2.75 pb-2.5;
+        @apply flex-1 rounded-xl border border-[#FFFFFF33] bg-[#FFFFFF1A] min-w-35 px-4 pt-2.75 pb-2.5 transition duration-300;
+    }
+
+    .input-footer:focus {
+        @apply border-[#A5D6A7] ring-2 ring-[#A5D6A7] outline-none;
     }
 
     .input-footer::placeholder {
         @apply font-tajawal font-normal leading-none text-right text-[#FFFFFF80];
     }
 
-    .button-footer {
-        @apply bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold;
 
-        @apply w-22.5 px-3 py-2.25 text-sm leading-5;
+    .button-footer {
+        @apply bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold w-22.5 px-3 py-2.25 text-sm leading-5 transition-transform duration-300 shadow-md;
 
         @screen md {
             @apply w-[102.3px] px-6 py-2.25 text-base leading-6;
         }
     }
 
-    .section-1-footer {
-        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-3 md:px-4 lg:px-6;
+    .button-footer:hover {
+        @apply scale-105 bg-[#388E3C] shadow-lg;
     }
-    
-   .footer-icons-1 {
-        @apply flex items-center gap-4 ;
-    }
-    .section-2-footer {
-        @apply font-tajawal font-medium text-[12px] leading-4 tracking-normal text-white flex flex-col sm:flex-col md:flex-row justify-between pt-8 border-t border-[#FFFFFF1A];
+
+    .footer-icons-1 {
+        @apply flex items-center gap-4;
     }
 
     .footer-text-2 {
-        @apply min-w-35 order-2 md:order-1 text-center md:text-right;
+        @apply min-w-35 order-2 md:order-1 text-center md:text-right transition duration-300;
+    }
+
+    .footer-text-2:hover {
+        @apply scale-105 opacity-90;
     }
 
     .footer-icons-2 {
         @apply flex items-center gap-4 min-w-35 order-1 md:order-2 justify-center md:justify-start;
     }
 
+    .footer-icons-1 img,
+    .footer-icons-2 img {
+        @apply transition-transform duration-300;
+    }
+
+    .footer-icons-1 img:hover,
+    .footer-icons-2 img:hover {
+        @apply scale-110 rotate-3;
+    }
 }
