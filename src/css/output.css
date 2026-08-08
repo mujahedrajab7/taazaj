@@ -253,6 +253,18 @@
       display: none;
     }
   }
+  .header-2-phone_tablet img:hover {
+    --tw-scale-x: 110%;
+    --tw-scale-y: 110%;
+    --tw-scale-z: 110%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+    rotate: 3deg;
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
   .header-2-nav {
     display: flex;
     gap: calc(var(--spacing) * 4);

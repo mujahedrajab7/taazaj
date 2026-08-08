@@ -17,6 +17,9 @@
     .header-2-phone_tablet {
         @apply flex justify-center items-center gap-4 lg:hidden order-2;
     }
+  .header-2-phone_tablet img:hover {
+        @apply scale-110 rotate-3 transition-transform duration-300;
+    }
 
     .header-2-nav {
         @apply flex gap-4;
