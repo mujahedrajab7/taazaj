@@ -17,7 +17,8 @@
     .header-2-phone_tablet {
         @apply flex justify-center items-center gap-4 lg:hidden order-2;
     }
-  .header-2-phone_tablet img:hover {
+
+    .header-2-phone_tablet img:hover {
         @apply scale-110 rotate-3 transition-transform duration-300;
     }
 
@@ -30,7 +31,7 @@
     }
 
     .header-2-text {
-        @apply font-tajawal font-medium text-sm leading-5 text-right text-[#40493D];
+        @apply font-tajawal font-medium text-base leading-5 text-right text-[#40493D];
     }
 
     .header-2-text:hover {
@@ -38,7 +39,7 @@
     }
 
     .header-2-text-active {
-        @apply font-tajawal font-medium text-sm leading-5 text-right text-[#2E7D32] underline underline-offset-4;
+        @apply font-tajawal font-medium text-base leading-5 text-right text-[#2E7D32] underline underline-offset-4;
     }
 
 
@@ -70,6 +71,19 @@
         @apply fixed top-0 left-0 w-full shadow-md z-9999999;
     }
 
+    .hero-text-1 {
+        @apply font-tajawal font-medium text-base leading-5 text-right text-[#40493D];
+    }
+    .hero-text-active-1 {
+        @apply font-tajawal font-bold text-base leading-5 text-right text-[#2E7D32] ;
+    }
+        .hero-text-2 {
+        @apply bg-[#FFFFFF] py-2 px-6 rounded-xl border border-[#BFCABA] text-center font-normal text-[#181D17] font-tajawal  text-base leading-6 shadow-md;
+    }
+    .hero-text-active-2 {
+        @apply  bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold px-2.75 py-2 text-base leading-6 shadow-md;
+    }
+       
     .bg-footer {
         @apply bg-[#1B5E20]
     }
@@ -154,7 +168,7 @@
 
 
     .button-footer {
-        @apply bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold w-22.5 px-3 py-2.25 text-sm leading-5 transition-transform duration-300 shadow-md;
+        @apply bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold w-22.5 px-3 py-2.25 text-base leading-5 transition-transform duration-300 shadow-md;
 
         @screen md {
             @apply w-[102.3px] px-6 py-2.25 text-base leading-6;
