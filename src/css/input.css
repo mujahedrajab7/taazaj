@@ -10,6 +10,55 @@
         @apply bg-[#F7FBF0]
     }
 
+    .header-2 {
+        @apply container mx-auto flex justify-between px-8;
+    }
+
+    .header-2-phone_tablet {
+        @apply flex justify-center items-center gap-4 lg:hidden order-2;
+    }
+
+    .header-2-nav {
+        @apply flex gap-4;
+    }
+
+    .header-2-nav img:hover {
+        @apply scale-110 rotate-3 transition-transform duration-300;
+    }
+
+    .header-2-text {
+        @apply font-tajawal font-medium text-sm leading-5 text-right text-[#40493D];
+    }
+
+    .header-2-text:hover {
+        @apply text-[#2E7D32] underline underline-offset-4 scale-105;
+    }
+
+    .header-2-text-active {
+        @apply font-tajawal font-medium text-sm leading-5 text-right text-[#2E7D32] underline underline-offset-4;
+    }
+
+
+    .header-2-div {
+        @apply hidden lg:flex justify-center items-center;
+    }
+
+    .header-2-input-label {
+        @apply relative;
+    }
+
+    .header-2-input-img {
+        @apply absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5;
+    }
+
+    .header-2-input {
+        @apply min-w-82.5 rounded-xl pt-[9.5px] pr-10 pb-[9.5px] pl-4 border border-[#BFCABA] bg-[#F1F5EB];
+    }
+
+    .header-2-input::placeholder {
+        @apply w-129.5 pt-px pb-0.5;
+    }
+
     .header-1 {
         @apply container mx-auto flex justify-between px-3 md:px-4 lg:px-6;
     }
