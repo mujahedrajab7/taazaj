@@ -71,16 +71,16 @@
         @apply fixed top-0 left-0 w-full shadow-md z-9999999;
     }
 
-    .hero-text-1 {
+    .Products-List-hero-text-1 {
         @apply font-tajawal font-medium text-base leading-5 text-right text-[#40493D];
     }
-    .hero-text-active-1 {
+    .Products-List-hero-text-active-1 {
         @apply font-tajawal font-bold text-base leading-5 text-right text-[#2E7D32] ;
     }
-        .hero-text-2 {
+        .Products-List-hero-text-2 {
         @apply bg-[#FFFFFF] py-2 px-6 rounded-xl border border-[#BFCABA] text-center font-normal text-[#181D17] font-tajawal  text-base leading-6 shadow-md;
     }
-    .hero-text-active-2 {
+    .Products-List-hero-text-active-2 {
         @apply  bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold px-2.75 py-2 text-base leading-6 shadow-md;
     }
        
@@ -89,7 +89,7 @@
     }
 
     .footer {
-        @apply container mx-auto flex flex-col gap-20 pt-8 pr-20 pb-8 pl-20;
+        @apply container mx-auto flex flex-col gap-20 pt-8 pr-8 pb-8 pl-20;
     }
 
     .section-1-footer {
