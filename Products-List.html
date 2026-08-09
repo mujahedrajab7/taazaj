@@ -94,7 +94,7 @@
           استمتع بأجود أنواع اللحوم المحلية والمستوردة بأسعار تنافسية.
         </p>
         <button
-          class="w-[138.95px] rounded-xl pt-3 px-8 py-3 bg-white text-[#2E7D32] font-tajawal font-bold text-base leading-6 shadow-md">
+          class="w-[138.95px] rounded-xl pt-3 px-8 py-3 bg-white text-[#2E7D32] font-tajawal font-bold text-base leading-6 shadow-md cursor-pointer">
           تسوق الآن
         </button>
       </div>
@@ -105,29 +105,203 @@
     </div>
   </section>
   <section class="container mx-auto px-8">
-    <div class="grid grid-cols-[3fr_1fr] gap-6">
-      <div class="flex flex-col gap-6">
-        <div class="bg-[#FFFFFF] flex justify-between gap-6 p-6 border border-[#BFCABA] rounded-xl">
-          <div></div>
-          <div></div>
-        </div>
-        <div class="flex pb-4 gap-6">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="bg-[#EBEFE5] flex justify-between border-2 border-[#2E7D32] border-dashed">
+    <div class="flex flex-col lg:grid lg:grid-cols-[3fr_1fr] gap-6">
+      <div class="flex flex-col gap-6 order-2 lg:order-1">
+
+        <div
+          class="bg-[#FFFFFF] flex flex-col sm:flex-row sm:justify-between lg:items-center gap-6 p-6 border border-[#BFCABA] rounded-xl">
+          <div class="flex items-center">
+            <p class="font-tajawal text-base leading-6 text-right text-[#000000]">
+              عرض
+              <span class="font-bold text-[#2E7D32]">12</span>
+              من إجمالي
+              <span class="font-bold text-[#2E7D32]">84</span>
+              منتج
+            </p>
+          </div>
+          <div class="flex gap-4 pl-4 items-center">
+            <div class="flex gap-2 pl-4 border-l border-[#BFCABA]">
+              <button class="cursor-pointer">
+                <img class="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" src="./src/img/Main/col.svg" alt="col">
+              </button>
+              <button class="cursor-pointer">
+                <img class="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" src="./src/img/Main/row.svg" alt="row">
+              </button>
+            </div>
+
+
+            <div>
+              <button
+                class="flex items-center gap-2 py-2 px-4 lg:pr-8 lg:pl-4 bg-[#F7FBF0] border border-[#BFCABA] rounded-xl cursor-pointer">
+                <img src="./src/img/Main/drop.svg" alt="drop" class="w-6 h-6 sm:w-7 sm:h-7">
+                <span
+                  class="font-tajawal font-normal text-sm sm:text-base lg:text-lg leading-6 text-[#000000] min-w-[71.77999877929688px] ml-4 lg:pl-[79.22px]">
+                  الأكثر مبيعاً
+                </span>
+              </button>
+            </div>
+          </div>
+
 
         </div>
-        <div class="flex flex-col">
-          <div></div>
-          <div></div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 pb-4">
+          <div class="flex flex-col bg-white border border-[#BFCABA] rounded-xl">
+            <div class="relative">
+              <img src="./src/img/product/Cow.webp" alt="Cow" class="w-full h-41.25 object-cover rounded-t-xl">
+              <button
+                class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md">
+                <img src="./src/img/Main/love.svg" alt="love" class="w-5 h-5">
+              </button>
+            </div>
+            <p class="font-[Tajawal] font-bold text-[10px] text-right text-[#2E7D32] px-4 pt-2">مزارعنا</p>
+            <h4 class="font-Cairo font-normal text-base text-right text-black px-4">لحم بقري محلي طازج</h4>
+            <div class="flex gap-1 px-4 pt-1">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+            </div>
+            <div class="flex justify-between items-center px-4 pt-2 pb-4">
+              <p class="text-[#2E7D32] font-tajawal font-bold text-base">ر.س 45.00</p>
+              <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-[#D9E6DA]">
+                <img src="./src/img/Main/buy.svg" alt="buy" class="w-5 h-5">
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-white border border-[#BFCABA] rounded-xl">
+            <div class="relative">
+              <img src="./src/img/product/Cow.webp" alt="Cow" class="w-full h-41.25 object-cover rounded-t-xl">
+              <button
+                class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md">
+                <img src="./src/img/Main/love.svg" alt="love" class="w-5 h-5">
+              </button>
+            </div>
+            <p class="font-[Tajawal] font-bold text-[10px] text-right text-[#2E7D32] px-4 pt-2">مزارعنا</p>
+            <h4 class="font-Cairo font-normal text-base text-right text-black px-4">لحم بقري محلي طازج</h4>
+            <div class="flex gap-1 px-4 pt-1">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+            </div>
+            <div class="flex justify-between items-center px-4 pt-2 pb-4">
+              <p class="text-[#2E7D32] font-tajawal font-bold text-base">ر.س 45.00</p>
+              <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-[#D9E6DA]">
+                <img src="./src/img/Main/buy.svg" alt="buy" class="w-5 h-5">
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-white border border-[#BFCABA] rounded-xl">
+            <div class="relative">
+              <img src="./src/img/product/Cow.webp" alt="Cow" class="w-full h-41.25 object-cover rounded-t-xl">
+              <button
+                class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md">
+                <img src="./src/img/Main/love.svg" alt="love" class="w-5 h-5">
+              </button>
+            </div>
+            <p class="font-[Tajawal] font-bold text-[10px] text-right text-[#2E7D32] px-4 pt-2">مزارعنا</p>
+            <h4 class="font-Cairo font-normal text-base text-right text-black px-4">لحم بقري محلي طازج</h4>
+            <div class="flex gap-1 px-4 pt-1">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+            </div>
+            <div class="flex justify-between items-center px-4 pt-2 pb-4">
+              <p class="text-[#2E7D32] font-tajawal font-bold text-base">ر.س 45.00</p>
+              <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-[#D9E6DA]">
+                <img src="./src/img/Main/buy.svg" alt="buy" class="w-5 h-5">
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-white border border-[#BFCABA] rounded-xl">
+            <div class="relative">
+              <img src="./src/img/product/Cow.webp" alt="Cow" class="w-full h-41.25 object-cover rounded-t-xl">
+              <button
+                class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-full bg-white shadow-md">
+                <img src="./src/img/Main/love.svg" alt="love" class="w-5 h-5">
+              </button>
+            </div>
+            <p class="font-[Tajawal] font-bold text-[10px] text-right text-[#2E7D32] px-4 pt-2">مزارعنا</p>
+            <h4 class="font-Cairo font-normal text-base text-right text-black px-4">لحم بقري محلي طازج</h4>
+            <div class="flex gap-1 px-4 pt-1">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+              <img src="./src/img/Main/star.svg" alt="star" class="w-4 h-4">
+            </div>
+            <div class="flex justify-between items-center px-4 pt-2 pb-4">
+              <p class="text-[#2E7D32] font-tajawal font-bold text-base">ر.س 45.00</p>
+              <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-[#D9E6DA]">
+                <img src="./src/img/Main/buy.svg" alt="buy" class="w-5 h-5">
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="bg-[#FFFFFF] flex flex-col gap-6 p-6 border border-[#BFCABA] rounded-xl"></div>
+
+
+        <div
+          class="bg-[#EBEFE5] flex flex-col gap-2 md:gap-0 md:flex-row md:justify-between items-center border-2 border-[#2E7D32] border-dashed rounded-xl p-6">
+          <div class="flex  gap-4 items-center">
+            <div class="bg-[#2E7D32] rounded-xl w-12 h-12 flex items-center justify-center">
+              <img class="w-6 h-6" src="./src/img/Main/Coupon.svg" alt="Coupon">
+            </div>
+            <div>
+              <h5 class="text-[#2E7D32] font-tajawal font-bold text-base leading-6">وفر المزيد مع الكوبونات!</h5>
+              <p class="text-[#40493D] font-tajawal font-normal text-base leading-6">
+                استخدم كود
+                <span class="text-[#181D17] font-tajawal font-bold text-base leading-6">FRESH10</span>
+                للحصول على خصم 10 ر.س
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <button
+              class="flex items-center justify-center gap-2 w-[148.03px] rounded-xl py-2 px-6 border border-[#2E7D32] text-[#2E7D32] font-tajawal font-bold text-[16px] leading-6 cursor-pointer">
+              <span>نسخ الكود</span>
+              <img src="./src/img/Main/copy.svg" alt="copy" />
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6 pt-6 justify-center">
+          <div class="flex justify-center gap-2">
+            <button
+              class="text flex justify-center items-center border border-[#BFCABA] rounded-xl w-10 h-10 shadow-xl"><img
+                src="./src/img/Main/back1.svg" alt="back"></button>
+            <button
+              class="text flex justify-center items-center border border-[#BFCABA] rounded-xl w-10 h-10 shadow-xl">1</button>
+            <button
+              class="text-active flex justify-center items-center border border-[#BFCABA] rounded-xl w-10 h-10 shadow-xl">2</button>
+            <p> ... </p>
+            <button
+              class="text flex justify-center items-center border border-[#BFCABA] rounded-xl w-10 h-10 shadow-xl">9</button>
+            <button
+              class="text flex justify-center items-center border border-[#BFCABA] rounded-xl w-10 h-10 shadow-xl"><img
+                src="./src/img/Main/go.svg" alt="go"></button>
+          </div>
+          <div class="flex flex-col justify-between items-center">
+            <button class="bg-[#D9E6DA] text-[#2E7D32] font-tajawal font-bold text-base leading-5 text-right cursor-pointer rounded-xl pt-3 pr-10 pb-3 pl-10 shadow-[0px_1px_2px_0px_#0000000D]">
+              عرض المزيد من المنتجات
+            </button>
+            
+            </div>
+            </div>
+            </div>
+
+      <div class="bg-[#FFFFFF] flex flex-col gap-6 p-6 border border-[#BFCABA] rounded-xl order-1 lg:order-2"></div>
+
     </div>
   </section>
+
 
   <footer class="bg-footer mt-3">
     <div class="footer">

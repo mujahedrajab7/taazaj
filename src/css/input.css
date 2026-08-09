@@ -23,7 +23,7 @@
     }
 
     .header-2-nav {
-        @apply flex gap-4;
+        @apply flex gap-4 cursor-pointer;
     }
 
     .header-2-nav img:hover {
@@ -72,18 +72,24 @@
     }
 
     .Products-List-hero-text-1 {
-        @apply font-tajawal font-medium text-base leading-5 text-right text-[#40493D];
+        @apply font-tajawal font-medium text-base leading-5 text-right text-[#40493D] cursor-pointer;
     }
     .Products-List-hero-text-active-1 {
-        @apply font-tajawal font-bold text-base leading-5 text-right text-[#2E7D32] ;
+        @apply font-tajawal font-bold text-base leading-5 text-right text-[#2E7D32] cursor-pointer;
     }
         .Products-List-hero-text-2 {
-        @apply bg-[#FFFFFF] py-2 px-6 rounded-xl border border-[#BFCABA] text-center font-normal text-[#181D17] font-tajawal  text-base leading-6 shadow-md;
+        @apply bg-[#FFFFFF] py-2 px-6 rounded-xl border border-[#BFCABA] text-center font-normal text-[#181D17] font-tajawal  text-base leading-6 shadow-md cursor-pointer;
     }
     .Products-List-hero-text-active-2 {
-        @apply  bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold px-2.75 py-2 text-base leading-6 shadow-md;
+        @apply  bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold px-2.75 py-2 text-base leading-6 shadow-md cursor-pointer;
     }
        
+    .text {
+        @apply font-tajawal font-medium text-base leading-5 text-right text-[#181D17] cursor-pointer;
+    }
+    .text-active {
+        @apply bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold px-2.75 py-2 text-base leading-6 shadow-md cursor-pointer;
+    }
     .bg-footer {
         @apply bg-[#1B5E20]
     }
@@ -146,7 +152,7 @@
     }
 
     .footer-text a {
-        @apply transition duration-300;
+        @apply transition duration-300 cursor-pointer;
     }
 
     .footer-text a:hover {
@@ -168,7 +174,7 @@
 
 
     .button-footer {
-        @apply bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold w-22.5 px-3 py-2.25 text-base leading-5 transition-transform duration-300 shadow-md;
+        @apply bg-[#2E7D32] rounded-xl text-center text-white font-tajawal font-bold w-22.5 px-3 py-2.25 text-base leading-5 transition-transform duration-300 shadow-md cursor-pointer;
 
         @screen md {
             @apply w-[102.3px] px-6 py-2.25 text-base leading-6;
@@ -176,7 +182,7 @@
     }
 
     .button-footer:hover {
-        @apply scale-105 bg-[#388E3C] shadow-lg;
+        @apply scale-105 bg-[#388E3C] shadow-lg ;
     }
 
     .footer-icons-1 {
