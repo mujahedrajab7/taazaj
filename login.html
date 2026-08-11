@@ -40,37 +40,38 @@
         <form class="flex flex-col gap-4 ">
           <div class="flex bg-[#EBEFE5] p-1 rounded-lg ">
             <button class="bg-[#FFFFFF] py-2 rounded-md shadow-[0px_1px_2px_0px_#0000000D] flex-1 
-            font-tajawal font-medium text-sm leading-5 text-[#0D631B] text-center align-middle">
+            font-tajawal font-medium text-sm leading-5 text-[#0D631B] text-center align-middle cursor-pointer">
               البريد الإلكتروني
             </button>
             <button class="py-2 rounded-md flex-1
-            font-tajawal font-medium text-sm leading-5 text-[#40493D] text-center align-middle">
+            font-tajawal font-medium text-sm leading-5 text-[#40493D] text-center align-middle cursor-pointer">
               رقم الجوال
             </button>
           </div>
           <div class="flex flex-col gap-4">
             <div class="flex flex-col gap-2 ">
-              <label for="email" class="font-tajawal font-medium text-sm leading-5 text-[#40493D] text-right">
+              <label for="email"
+                class="font-tajawal font-medium text-sm leading-5 text-[#40493D] text-right cursor-pointer">
                 البريد الإلكتروني
               </label>
               <div class="relative">
                 <label for="email" class="absolute right-4 top-1/2 translate-y-[-40%] cursor-pointer">
                   <img src="./src/img/login/email.svg" alt="email" class="w-5 h-5">
                 </label>
-                <input id="email" type="email"
-                  class="w-full rounded-xl pt-[13.5px] pr-11 pb-[13.5px] pl-4 border border-[#BFCABA] bg-white
-                  placeholder:font-tajawal placeholder:font-normal placeholder:text-base placeholder:leading-[100%] placeholder:text-[#6B7280] placeholder:text-right placeholder:align-middle placeholder:pt-px placeholder:pb-0.5"
-                  placeholder="example@mail.com">
+                <input id="email" type="email" class="w-full rounded-xl pt-[13.5px] pr-11 pb-[13.5px] pl-4 border border-[#BFCABA] bg-white
+                  placeholder:font-tajawal placeholder:font-normal placeholder:text-base placeholder:leading-[100%] placeholder:text-[#6B7280] placeholder:text-right placeholder:align-middle placeholder:pt-px placeholder:pb-0.5
+                  shadow-lg cursor-pointer" placeholder="example@mail.com">
               </div>
             </div>
 
             <div class="flex flex-col gap-2 ">
               <div class="flex justify-between items-center">
-                <label for="password" class="font-tajawal font-medium text-sm leading-5 text-[#40493D] text-right">
+                <label for="password"
+                  class="font-tajawal font-medium text-sm leading-5 text-[#40493D] text-right cursor-pointer">
                   كلمة المرور
                 </label>
                 <a href="./Reset-Password.html"
-                  class="font-tajawal font-medium text-xs leading-4 text-[#0D631B] hover:underline">
+                  class="font-tajawal font-medium text-xs leading-4 text-[#0D631B] hover:underline hover:zoom-105 cursor-pointer">
                   نسيت كلمة المرور؟
                 </a>
               </div>
@@ -78,35 +79,55 @@
                 <label for="password" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
                   <img src="./src/img/login/pass.svg" alt="password" class="w-5 h-5">
                 </label>
-                <input id="password" type="password"
-                  class="w-full rounded-xl pt-[13.5px] pr-11 pb-[13.5px] pl-4 border border-[#BFCABA] bg-white 
-                   placeholder:font-tajawal placeholder:font-normal placeholder:text-base placeholder:leading-[100%] placeholder:text-[#6B7280] placeholder:text-right placeholder:align-middle placeholder:pt-px placeholder:pb-0.5"
-                  placeholder="••••••••">
+                <input id="password" type="password" class="w-full rounded-xl pt-[13.5px] pr-11 pb-[13.5px] pl-4 border border-[#BFCABA] bg-white 
+                   placeholder:font-tajawal placeholder:font-normal placeholder:text-base placeholder:leading-[100%] placeholder:text-[#6B7280] placeholder:text-right placeholder:align-middle placeholder:pt-px placeholder:pb-0.5
+                   shadow-lg cursor-pointer" placeholder="••••••••">
                 <img src="./src/img/login/eye.svg" alt="Show password"
                   class="absolute left-4 top-1/2 translate-y-[-35%] w-5 h-5 cursor-pointer">
               </div>
             </div>
 
-            <button type="submit" class="flex-1 pt-[9.5px] pb-[10.5px] bg-[#0D631B] rounded-xl 
-            font-cairo font-semibold text-[20px] leading-[28px] text-center align-middle text-white">
+            <button type="submit"
+              class="flex-1 pt-[9.5px] pb-[10.5px] bg-[#0D631B] rounded-xl 
+            font-cairo font-semibold text-[20px] leading-7 text-center align-middle text-white shadow-[0px_1px_2px_0px_#0000000D] cursor-pointer">
               تسجيل الدخول
             </button>
 
           </div>
           <div class="flex items-center ">
-            <div class="grow "></div>
-            <span class="">أو سجل دخولك عبر</span>
-            <div class="grow "></div>
+            <div class="grow border-t border-[#BFCABA80]"></div>
+            <span class="px-4 font-tajawal font-medium text-[12px] leading-4 text-right align-middle text-[#40493D]">أو
+              سجل دخولك عبر</span>
+            <div class="grow border-t border-[#BFCABA80] "></div>
           </div>
-          <div class="flex justify-between">
-            <button>google</button>
-            <button>apple</button>
+          <div class="flex gap-6">
+            <button
+              class="flex-1 flex items-center justify-center px-[61.68px] py-4 gap-2 border border-[#BFCABA] rounded-xl shadow-lg cursor-pointer">
+              <img src="./src/img/login/google.svg" alt="Sign in via Google" class="h-5 w-5">
+              <span class="font-tajawal text-sm">Google</span>
+            </button>
+
+            <button
+              class="flex-1 flex items-center justify-center px-[61.68px] py-4 gap-2 border border-[#BFCABA] rounded-xl shadow-lg cursor-pointer">
+              <img src="./src/img/login/apple.svg" alt="Sign in via Apple" class="h-5 w-5">
+              <span class="font-tajawal text-sm">Apple</span>
+            </button>
           </div>
-          <div>
-            <p>ليس لديك حساب؟ </p>
-            <a href="">سجل الآن</a>
+          <div class="flex justify-center items-center">
+            <p class="font-tajawal font-normal text-base leading-6 text-center align-middle text-[#40493D]">ليس لديك
+              حساب؟ </p>
+            <a href=""
+              class="-tajawal font-bold text-base leading-6 text-center align-middle text-[#0D631B] cursor-pointer">سجل
+              الآن</a>
           </div>
-          <button>المتابعة كضيف</button>
+          <div class="border-t border-[#BFCABA4D] pt-2">
+            <a href="./Create-An-Account.html"
+              class="flex justify-center items-center flex-1 rounded-xl py-4 border border-[#0D631B] cursor-pointer">
+              <p class="font-tajawal font-medium text-[14px] leading-5 text-center align-middle text-[#0D631B]">
+                المتابعة كضيف
+              </p>
+            </a>
+          </div>
         </form>
       </div>
     </main>
