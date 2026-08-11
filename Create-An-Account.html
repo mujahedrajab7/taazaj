@@ -28,17 +28,135 @@
       </div>
     </div>
   </header>
-  <section class="container mx-auto  my-[132.5px] px-4 grid place-items-center w-full max-w-120">
+  <section class="container mx-auto  my-[132.5px] px-4 grid place-items-center max-w-120">
     <main
       class="w-full grid place-items-center rounded-xl p-4 sm:p-8 gap-8 border border-[#BFCABA4D] shadow-[0px_4px_12px_0px_#0000000D]">
       <div class="flex flex-col gap-8">
         <div class="flex flex-col gap-2">
-          <h1 class="font-cairo font-bold text-[32px] leading-10 text-[#0D631B] text-center">إنشاء حساب جديد</h1> 
-          <p class="font-tajawal font-normal text-base leading-6 text-[#40493D] text-center">ابدأ رحلتك للحصول على أفضل الخضروات الطازجة</p>
+          <h1 class="font-cairo font-bold text-[32px] leading-10 text-[#0D631B] text-center">إنشاء حساب جديد</h1>
+          <p class="font-tajawal font-normal text-base leading-6 text-[#40493D] text-center">ابدأ رحلتك للحصول على أفضل
+            الخضروات الطازجة</p>
         </div>
-      <form >
+        <form class="flex flex-col gap-6">
+          <div class="flex flex-col md:flex-row gap-6 ">
+            <div class="flex flex-col flex-1 gap-2">
+              <label for="firstname"
+                class="font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#40493D] cursor-pointer">الاسم
+                الأول</label>
+              <label for="firstname" class="relative cursor-pointer">
+                <img class="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer" src="./src/img/Create-An-Account/firstname.svg"
+                  alt="firstname">
+                <input
+                  class="cursor-pointer w-full rounded-xl pt-3.75 pr-10 pl-4 pb-3.5 border border-[#BFCABA] bg-[#F7FBF0] shadow-lg placeholder:pt-px placeholder:pb-0.5 placeholder:font-Tajawal placeholder:font-normal placeholder:text-[16px] placeholder:leading-[100%] placeholder:text-right placeholder:align-middle placeholder:text-[#BFCABA]"
+                  type="text" id="firstname" placeholder="مجاهد">
+              </label>
+            </div>
+            <div class="flex flex-col flex-1 gap-2">
+              <label for="lastname"
+                class="cursor-pointer font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#40493D]">اسم
+                العائلة</label>
+              <label class="relative cursor-pointer" for="lastname">
+                <img class="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2" src="./src/img/Create-An-Account/lastname.svg"
+                  alt="lastname">
+                <input
+                  class="cursor-pointer w-full rounded-xl pt-3.75 pr-10 pl-4 pb-3.5 border border-[#BFCABA] bg-[#F7FBF0] shadow-lg placeholder:pt-px placeholder:pb-0.5 placeholder:font-Tajawal placeholder:font-normal placeholder:text-[16px] placeholder:leading-[100%] placeholder:text-right placeholder:align-middle placeholder:text-[#BFCABA]"
+                  type="text" id="lastname" placeholder="رجب">
+              </label>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
+              <label for="email"
+                class="cursor-pointer font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#40493D]">البريد
+                الإلكتروني</label>
+              <label class="cursor-pointer relative" for="email">
+                <img class="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2" src="./src/img/Create-An-Account/email.svg"
+                  alt="email">
+                <input
+                  class="cursor-pointer w-full rounded-xl pt-3.75 pr-10 pl-4 pb-3.5 border border-[#BFCABA] bg-[#F7FBF0] shadow-lg placeholder:pt-px placeholder:pb-0.5 placeholder:font-Tajawal placeholder:font-normal placeholder:text-[16px] placeholder:leading-[100%] placeholder:text-right placeholder:align-middle placeholder:text-[#BFCABA]"
+                  type="email" id="email" placeholder="example@email.com">
+              </label>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="phone"
+                class="cursor-pointer font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#40493D]">رقم
+                الجوال</label>
+              <label class="cursor-pointer relative" for="phone">
+                <img class="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2" src="./src/img/Create-An-Account/phone.svg"
+                  alt="phone number">
+                <input
+                  class="cursor-pointer w-full rounded-xl pt-3.75 pr-10 pl-4 pb-3.5 border border-[#BFCABA] bg-[#F7FBF0] shadow-lg placeholder:pt-px placeholder:pb-0.5 placeholder:font-Tajawal placeholder:font-normal placeholder:text-[16px] placeholder:leading-[100%] placeholder:text-right placeholder:align-middle placeholder:text-[#BFCABA]"
+                  type="tel" id="phone" placeholder="05XXXXXXXX">
+              </label>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="flex flex-col flex-1 gap-2">
+              <label for="city" class="cursor-pointer font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#40493D]">
+                المدينة
+              </label>
+              <div class="relative cursor-pointer">
+                <select
+                  class="cursor-pointer w-full rounded-xl pt-3.75 pr-10 pb-3.5 pl-4 border border-[#BFCABA] bg-[#F7FBF0] shadow-lg appearance-none"
+                  name="city" id="city">
+                  <option value="">اختر المدينة</option>
+                  <option value="tulkarm">طولكرم</option>
+                </select>
+                <img class="cursor-pointer absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none " src="./src/img/Create-An-Account/Stock-options.svg"
+                  alt="Stock-options">
+              </div>
+            </div>
 
-      </form>
+            <div class="flex flex-col flex-1 gap-2">
+              <label for="district"
+                class="cursor-pointer font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#40493D]">الحي</label>
+              <input
+                class="cursor-pointer w-full rounded-xl pt-3.75 pr-10 pl-4 pb-3.5 border border-[#BFCABA] bg-[#F7FBF0] shadow-lg placeholder:pt-px placeholder:pb-0.5 placeholder:font-Tajawal placeholder:font-normal placeholder:text-[16px] placeholder:leading-[100%] placeholder:text-right placeholder:align-middle placeholder:text-[#BFCABA]"
+                type="text" id="district" placeholder=" كفراللبد/الحي الغربي">
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <label for="password"
+              class="cursor-pointer font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#40493D]">كلمة
+              المرور</label>
+            <label class="cursor-pointer relative" for="password">
+              <img class="cursor-pointer absolute right-2 top-1/2 -translate-y-1/2" src="./src/img/Create-An-Account/password.svg"
+                alt="Enter the password">
+              <img class="cursor-pointer absolute left-2 top-1/2 -translate-y-1/2" src="./src/img/Create-An-Account/eye.svg"
+                alt="Show password">
+              <input
+                class="cursor-pointer w-full rounded-xl pt-3.75 pr-10 pl-4 pb-3.5 border border-[#BFCABA] bg-[#F7FBF0] shadow-lg placeholder:pt-px placeholder:pb-0.5 placeholder:font-Tajawal placeholder:font-normal placeholder:text-[16px] placeholder:leading-[100%] placeholder:text-right placeholder:align-middle placeholder:text-[#BFCABA]"
+                type="password" id="password" placeholder="••••••••">
+            </label>
+            <div class="flex flex-col gap-2 p-4 bg-[#EBEFE5] border border-[#BFCABA4D] rounded-lg">
+              <h6 class="font-Tajawal font-bold text-[12px] leading-4 text-right align-middle text-[#40493D]">يجب أن تحتوي كلمة المرور على:</h6>
+              <div class="flex flex-col gap-1">
+                <div class="flex gap-2">
+                  <img class="h-3.75 w-3.75" src="./src/img/Create-An-Account/It-was-completed.svg" alt="It-was-completed">
+                  <p class="font-Tajawal font-medium text-[12px] leading-4 text-right align-middle text-[#0D631B]"> 8 أحرف على الأقل</p>
+                </div>
+                <div class="flex gap-2">
+                  <img class="h-3.75 w-3.75" src="./src/img/Create-An-Account/Work-in-progress.svg" alt="Work-in-progress">
+                  <p class="font-[Tajawal] font-medium text-[12px] leading-4 text-right align-middle text-[#40493D99]">حرف كبير وصغير (A, a)</p>
+                </div>
+                <div class="flex gap-2">
+                  <img class="h-3.75 w-3.75" src="./src/img/Create-An-Account/Work-in-progress.svg" alt="Work-in-progress">
+                  <p class="font-[Tajawal] font-medium text-[12px] leading-4 text-right align-middle text-[#40493D99]">رقم واحد على الأقل</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="w-full flex justify-center items-center cursor-pointer rounded-xl gap-[7.99px] pt-[9.5px] pb-[10.5px] bg-[#0D631B]">
+              <p class="font-Cairo font-bold text-[20px] leading-7 text-center align-middle text-white">إنشاء الحساب</p>
+              <img src="./src/img/Create-An-Account/go.svg" alt="Create-An-Account">
+            </button>
+          </div>
+          <div class="flex justify-center items-center gap-1">
+            <p class="font-Tajawal font-normal text-[16px] leading-6 align-middle text-[#40493D]">لديك حساب بالفعل؟ </p>
+            <a class="cursor-pointer font-Tajawal font-bold text-[16px] leading-6 align-middle text-[#0D631B]" href="./login.html">تسجيل الدخول</a>
+          </div>
+        </form>
       </div>
     </main>
   </section>
@@ -55,13 +173,13 @@
             وجهتك الأولى للخضراوات والفواكه واللحوم الطازجة مباشرة من المزارع إلى باب بيتك عبر تطبيق الويب.
           </p>
           <nav class="footer-icons-1">
-                      <a href="" class="footer-icons-1">
+            <a href="" class="footer-icons-1">
               <img src="./src/img/footer/ImageFrameIcon.svg" alt="ImageFrameIcon">
             </a>
-                        <a href="" class="footer-icons-1">
+            <a href="" class="footer-icons-1">
               <img src="./src/img/footer/LinkIcon.svg" alt="LinkIcon">
             </a>
-                        <a href="" class="footer-icons-1">
+            <a href="" class="footer-icons-1">
               <img src="./src/img/footer/TextIcon.svg" alt="TextIcon">
             </a>
           </nav>
@@ -107,7 +225,7 @@
           <nav class="nav-2-footer-section-1">
             <a href="tel:+970595583972" class="footer-icons-1 footer-text">
               <img src="./src/img/footer/phone-footer.svg" alt="اتصل بنا">
-              <span class="min-w-35" dir="ltr" >+970 595 583 972</span>
+              <span class="min-w-35" dir="ltr">+970 595 583 972</span>
             </a>
 
             <a href="mailto:support@altazaj.com" class="footer-icons-1 footer-text">
