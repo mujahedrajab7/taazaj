@@ -128,17 +128,15 @@
                 <img class="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" src="./src/img/Main/row.svg" alt="row">
               </button>
             </div>
-
-            <div>
-              <label
-                class="flex items-center gap-2 py-2 px-4 lg:pr-8 lg:pl-4 bg-[#F7FBF0] border border-[#BFCABA] rounded-xl cursor-pointer">
-                <img src="./src/img/Main/drop.svg" alt="drop" class="w-6 h-6 sm:w-7 sm:h-7">
-                <select name="product-filter"
-                  class="appearance-none font-tajawal font-normal text-sm sm:text-base lg:text-lg leading-6 text-[#000000] min-w-[71.77999877929688px] ml-4 lg:pl-[79.22px]">
-                  <option value="">الأكثر مبيعاً</option>
-                </select>
-              </label>
+            <div class="relative min-w-32.5 max-w-40 w-full">
+              <select name="product-filter"
+                class="cursor-pointer w-full rounded-xl pt-3.75 pr-5 lg:pr-10 pb-3.5 lg:pl-[79.22px] pl-4 border border-[#BFCABA] bg-[#F7FBF0] shadow-lg appearance-none font-tajawal font-normal text-sm sm:text-base lg:text-lg leading-6 text-[#000000] min-w-[71.77999877929688px] ml-4">
+                <option value="">الأكثر مبيعاً</option>
+              </select>
+              <img src="./src/img/Main/drop.svg" alt="drop"
+                class="absolute left-3.5 top-1/2 -translate-y-1/2 w-6 h-6 sm:w-7 sm:h-7 pointer-events-none ">
             </div>
+
           </div>
         </div>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 pb-4">
@@ -295,59 +293,59 @@
         </div>
       </div>
 
-      <div
-        class="rounded-xl order-1 lg:order-2 ">
-           <div class="bg-[#FFFFFF] flex flex-col gap-6 p-6 border border-[#BFCABA] rounded-xl  shadow-[0px_1px_2px_0px_#0000000D]">
-            <div class="flex">
-             <img src="./src/img/Main/filter.svg" alt="filter" class="h-5 w-5">
-          <h3>الفلاتر</h3>
+      <div class="rounded-xl order-1 lg:order-2 ">
+        <div
+          class="bg-[#FFFFFF] flex flex-col gap-6 p-6 border border-[#BFCABA] rounded-xl  shadow-[0px_1px_2px_0px_#0000000D]">
+          <div class="flex">
+            <img src="./src/img/Main/filter.svg" alt="filter" class="h-5 w-5">
+            <h3>الفلاتر</h3>
+          </div>
+          <form class="flex flex-col">
+            <div>
+              <h4>السعر (ر.س)</h4>
+              <input type="range">
+              <div class="flex justify-between">
+                <p>0 ر.س</p>
+                <p>500 ر.س</p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h4>العلامة التجارية</h4>
+
+              <label class="">
+                <input type="checkbox" name="brand" value="مزارعنا" class="cursor-pointer">
+                <span>مزارعنا</span>
+              </label>
+
+              <label class="">
+                <input type="checkbox" name="brand" value="ساديا" class="cursor-pointer">
+                <span>ساديا</span>
+              </label>
+
+              <label class="">
+                <input type="checkbox" name="brand" value="الوطنية" class="cursor-pointer">
+                <span>الوطنية</span>
+              </label>
+            </div>
+            <div class="flex flex-col">
+              <h4>التقييم</h4>
+              <div class="flex ">
+                <img src="./src/img/Main/star.svg" alt="star">
+                <p>فأعلى</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="font-bold">المتوفر فقط</span>
+              </label>
+            </div>
+          </form>
         </div>
-        <form class="flex flex-col">
-          <div>
-            <h4>السعر (ر.س)</h4>
-            <input type="range">
-            <div class="flex justify-between">
-              <p>0 ر.س</p>
-              <p>500 ر.س</p>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <h4>العلامة التجارية</h4>
-      
-            <label class="">
-              <input type="checkbox" name="brand" value="مزارعنا" class="cursor-pointer">
-              <span>مزارعنا</span>
-            </label>
-      
-            <label class="">
-              <input type="checkbox" name="brand" value="ساديا" class="cursor-pointer">
-              <span>ساديا</span>
-            </label>
-      
-            <label class="">
-              <input type="checkbox" name="brand" value="الوطنية" class="cursor-pointer">
-              <span>الوطنية</span>
-            </label>
-          </div>
-          <div class="flex flex-col">
-            <h4>التقييم</h4>
-            <div class="flex ">
-              <img src="./src/img/Main/star.svg" alt="star">
-              <p>فأعلى</p>
-            </div>
-          </div>
-      
-          <div class="flex items-center gap-3">
-            <label class="switch">
-              <input type="checkbox">
-              <span class="font-bold">المتوفر فقط</span>
-            </label>
-          </div>
-        </form>
-           </div>
       </div>
     </div>
- </section>
+  </section>
 
 
 

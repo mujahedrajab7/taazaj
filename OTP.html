@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg">
-  <header class="bg-header">
+  <header class="bg-header header-position">
     <div class="header-1">
 
       <div class="py-5">
@@ -28,7 +28,56 @@
       </div>
     </div>
   </header>
-  <footer class="bg-footer header-position">
+  <section class="container mx-auto  my-[132.5px] px-4 grid place-items-center max-w-120">
+    <main
+      class="w-full grid place-items-center rounded-xl p-4 sm:p-8 gap-4 border border-[#BFCABA4D] shadow-[0px_4px_12px_0px_#0000000D]">
+      <div class="flex flex-col gap-8">
+        <div class="flex flex-col justify-between items-center gap-8">
+          <div class="flex justify-center items-center h-20 w-20 rounded-[9999px] bg-[#2E7D321A]">
+            <img src="./src/img/Reset-Password/otp.svg" alt="otp">
+          </div>
+          <div class="flex flex-col gap-2">
+            <h1 class="font-cairo font-bold text-[32px] leading-10 text-[#181D17] text-center ">رمز التحقق</h1>
+            <p class="font-tajawal font-normal text-base leading-6 text-[#40493D] text-center ">أدخل الرمز المرسل إلى
+              رقم الجوال الخاص بك</p>
+          </div>
+        </div>
+        <form class="flex flex-col gap-8">
+          <div class="flex gap-4">
+            <input maxlength="1"
+              class="outline-none text-center min-w-13 max-w-16 w-full rounded-xl p-[23.5px_12px] border-2 border-[#BFCABA] shadow-lg"
+              type="text">
+            <input maxlength="1"
+              class="outline-none text-center min-w-13 max-w-16 w-full rounded-xl p-[23.5px_12px] border-2 border-[#BFCABA] shadow-lg"
+              type="text">
+            <input maxlength="1"
+              class="outline-none text-center min-w-13 max-w-16 w-full rounded-xl p-[23.5px_12px] border-2 border-[#BFCABA] shadow-lg"
+              type="text">
+            <input maxlength="1"
+              class="outline-none text-center min-w-13 max-w-16 w-full rounded-xl p-[23.5px_12px] border-2 border-[#BFCABA] shadow-lg"
+              type="text">
+          </div>
+          <div class="flex flex-col gap-2 justify-center items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <img class="h-4 w-4" src="./src/img/Reset-Password/clock.svg" alt="clock">
+              <p class="font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#40493D]">00:58</p>
+            </div>
+            <button
+              class="cursor-pointer font-Tajawal font-medium text-[14px] leading-5 text-center align-middle text-[#556158]">إعادة
+              إرسال الرمز</button>
+          </div>
+          <button type="submit"
+            class="flex-1 pt-[9.5px] pb-[10.5px] bg-[#0D631B] rounded-xl 
+              font-cairo font-semibold text-[20px] leading-7 text-center align-middle text-white shadow-[0px_2px_4px_-2px_#0000001A,0px_4px_6px_-1px_#0000001A] cursor-pointer">تحقق</button>
+        </form>
+      </div>
+      <div class="flex flex-col justify-between items-center">
+        <a class="font-Tajawal font-medium text-[14px] leading-5 text-right align-middle text-[#0D631B]"
+          href="./Reset-Password.html">تغيير رقم الجوال</a>
+      </div>
+    </main>
+  </section>
+  <footer class="bg-footer">
     <div class="footer">
 
       <section class="section-1-footer">
@@ -41,13 +90,13 @@
             وجهتك الأولى للخضراوات والفواكه واللحوم الطازجة مباشرة من المزارع إلى باب بيتك عبر تطبيق الويب.
           </p>
           <nav class="footer-icons-1">
-                      <a href="" class="footer-icons-1">
+            <a href="" class="footer-icons-1">
               <img src="./src/img/footer/ImageFrameIcon.svg" alt="ImageFrameIcon">
             </a>
-                        <a href="" class="footer-icons-1">
+            <a href="" class="footer-icons-1">
               <img src="./src/img/footer/LinkIcon.svg" alt="LinkIcon">
             </a>
-                        <a href="" class="footer-icons-1">
+            <a href="" class="footer-icons-1">
               <img src="./src/img/footer/TextIcon.svg" alt="TextIcon">
             </a>
           </nav>
@@ -93,7 +142,7 @@
           <nav class="nav-2-footer-section-1">
             <a href="tel:+970595583972" class="footer-icons-1 footer-text">
               <img src="./src/img/footer/phone-footer.svg" alt="اتصل بنا">
-              <span class="min-w-35" dir="ltr" >+970 595 583 972</span>
+              <span class="min-w-35" dir="ltr">+970 595 583 972</span>
             </a>
 
             <a href="mailto:support@altazaj.com" class="footer-icons-1 footer-text">
