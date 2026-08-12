@@ -198,6 +198,9 @@
   .relative {
     position: relative;
   }
+  .top-0 {
+    top: 0px;
+  }
   .top-1 {
     top: var(--spacing);
   }
@@ -257,6 +260,12 @@
   }
   .my-\[132\.5px\] {
     margin-block: 132.5px;
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-1\.75 {
+    margin-top: calc(var(--spacing) * 1.75);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -453,6 +462,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -785,6 +797,10 @@
     --tw-leading: 20px;
     line-height: 20px;
   }
+  .leading-\[22\.75px\] {
+    --tw-leading: 22.75px;
+    line-height: 22.75px;
+  }
   .leading-\[24px\] {
     --tw-leading: 24px;
     line-height: 24px;
@@ -821,6 +837,9 @@
   }
   .text-\[\#2E7D32\] {
     color: #2E7D32;
+  }
+  .text-\[\#5B675E\] {
+    color: #5B675E;
   }
   .text-\[\#181D17\] {
     color: #181D17;
