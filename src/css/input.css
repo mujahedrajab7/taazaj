@@ -6,8 +6,11 @@
 }
 
 @layer components {
+    .bg {
+        @apply bg-[linear-gradient(0deg,#F7FBF0,#F7FBF0),radial-gradient(70.71%_70.71%_at_50%_50%,#D9E6DA_2.95%,rgba(217,230,218,0)_2.95%)];
+    }
     .bg-header {
-        @apply bg-[#F7FBF0]
+        @apply bg-[#F7FBF0];
     }
 
     .header-2 {
