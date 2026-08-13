@@ -213,4 +213,5 @@
     .footer-icons-2 img:hover {
         @apply scale-110 rotate-3;
     }
+
 }
